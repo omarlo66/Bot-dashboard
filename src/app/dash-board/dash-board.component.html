@@ -1,9 +1,147 @@
-<div class="row container">
-    <div class="col-3">
-        <div class="chart shadow border p-3 container">
-            <canvas id="pieChart" width="130" height="100" ></canvas>
-            <p class="text-success number2 m-3 "> 2.2 % <i class="fa-solid fa-arrow-trend-up"></i></p>
+<section id="dash-board" class="main-bg text-white d-flex flex-column justify-content-center px-4">
+    <div class=" row container-fluid">
+
+        <h1 class="text-white h2 py-4">Demographics</h1>
+
+        <div class="row justify-content-between mb-3">
+           
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="female female-bg rounded-4 text-center py-2">
+                    <span class="h3">Female<h3 class="pt-1">700</h3></span>
+                </div>
+            </div>
+       
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="male male-bg rounded-4 text-center py-2">
+                    <span class="h3">Male<h3 class="pt-1">1200</h3></span>
+                </div>
+            </div>
+       
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="full-time full-time-bg rounded-4 text-center py-2">
+                    <span class="h3">Full Time<h3 class="pt-1">500</h3></span>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="part-time part-time-bg rounded-4 text-center py-2">
+                    <span class="h3">Part Time<h3 class="pt-1">500</h3></span>
+                </div>
+            </div>
         
-          </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="head-count head-count-bg rounded-4 text-center py-2">
+                    <span class="h3">Head Count<h3 class="pt-1">1500</h3></span>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="row container-fluid  b">
+            <div class="row   mb-3">
+                <!-- Left Column (Form Elements) -->
+                <div class="col-12 col-md-3 col-lg-2  justify-content-center ">
+                    <div class="offers sec-bg text-center rounded-4 py-3 my-3">
+                        <label for="offers" class="d-block pb-2">Accepted Offers</label>
+                        <select name="Accepted-offers" id="offers" class="offers w-75 select-input-bg text-white border-0">
+                            <option value="all" selected>All</option>
+                            <option value="offer-1">offer-1</option>
+                            <option value="offer-2">offer-2</option>
+                            <option value="offer-3">offer-3</option>
+                            <option value="offer-4">offer-4</option>
+                        </select>
+                    </div>
+            
+                    <div class="location sec-bg text-center rounded-4 py-3">
+                        <label for="location" class="d-block pb-2">Locations</label>
+                        <select name="location" id="location" class="location w-75 select-input-bg text-white border-0">
+                            <option value="all" selected>All</option>
+                            <option value="offer-1">offer-1</option>
+                            <option value="offer-2">offer-2</option>
+                            <option value="offer-3">offer-3</option>
+                            <option value="offer-4">offer-4</option>
+                        </select>
+                    </div>
+            
+                    <div class="organization sec-bg text-center rounded-4 py-3 my-3">
+                        <label for="organization" class="d-block pb-2">Organization</label>
+                        <select name="organization" id="organization" class="organization w-75 select-input-bg text-white border-0">
+                            <option value="all" selected>All</option>
+                            <option value="offer-1">offer-1</option>
+                            <option value="offer-2">offer-2</option>
+                            <option value="offer-3">offer-3</option>
+                            <option value="offer-4">offer-4</option>
+                        </select>
+                    </div>
+            
+                    <div class="check-boxs sec-bg rounded-4 py-3">
+                        <h3 class="check-box-title pb-2 text-center">Organization</h3>
+                        <div class="check-inputs mx-4 ">
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                            <label class=" custom-checkbox d-flex align-items-center mb-1">
+                                <input type="checkbox" />
+                                <span></span> Custom
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Column (Charts) -->
+                <div class="col-12  col-md-9 col-lg-10  pt-3 ">
+                    <div class="row ms-auto">
+                        <div class="col-12   col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="barChart" class="text-white" height="195"></canvas>
+                            </div>
+                        </div>
+                       <div class="col-12  col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="lineChart" height="195"></canvas>
+                            </div>
+                        </div>
+                       <div class="col-12  col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="lineChart2" height="195"></canvas>
+                            </div>
+                        </div>
+                       <div class="col-12  col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="horizontalBarChart" height="195"></canvas>
+                            </div>
+                        </div>
+                       <div class="col-12  col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="verticalbarchart" height="195"></canvas>
+                            </div>
+                        </div>
+                       <div class="col-12  col-lg-4 mb-3">
+                            <div class="chart sec-bg rounded-4">
+                                <canvas id="verticalbarchart2" height="195"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
     </div>
-</div>
+</section>
