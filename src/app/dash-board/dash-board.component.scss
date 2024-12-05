@@ -1,0 +1,97 @@
+.main-bg{background-color: #1C2251;}
+.sec-bg{background-color: #2A417D;}
+.head-count-bg{background-color: #287E8F;}
+.female-bg{background-color: #15CAB7;}
+.male-bg{background-color: #F6B53E;}
+.full-time-bg{background-color: #EF8B5A;}
+.part-time-bg{background-color: #E85E77;}
+.select-input-bg{background-color: #3860A8;}
+#dash-board{
+   min-height: 100vh;
+}
+
+select{
+    cursor: pointer;
+    padding: .2rem;
+}
+select:focus{
+    outline: none;
+    border: none;
+}
+
+.check-box-title{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0; 
+  }
+  
+ 
+  .custom-checkbox span {
+    display: inline-block;
+    width: 1.25rem; 
+    height: 1.25rem; 
+    background-color: #3860A8 ;
+    border-radius: 4px;
+    margin-right: .8rem; 
+    transition: all 0.3s ease; 
+  }
+  
+  
+  .custom-checkbox input[type="checkbox"]:checked + span {
+    background-color: #2a4a99; 
+    border-color: #2a4a99;
+    position: relative;
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + span::after {
+    content: "✓";
+    color: white;
+    font-size: .875remx;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+
+  .custom-checkbox span:hover {
+    background-color: #ddd;
+  }
+
+  .chart{
+    width: 100%;
+  }
+ 
+ #pieChart{
+    height: 200px !important;
+    width: 200px !important;
+ }
+ #pieChart-2{
+    height: 255px !important;
+    width: 255px !important;
+ }
+
+ @media (max-width: 1294px) {
+.chart{
+  height: 280px;
+}
+}
+ @media (max-width: 1166px) {
+.female span , .male span , .full-time span , .part-time span , .head-count span {
+  font-size: 22px;
+}
+}
+
+
+
+
+
